@@ -1,0 +1,135 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {font-size: 20px;}
+html, body, input, button {font-family: 'gilroy-mediumuploaded_file', Arial, Helvetica, sans-serif;}
+body {line-height: 1.1;background: url("../images/bg.png") no-repeat;background-size: cover;}
+* {box-sizing: border-box;}
+img {max-width: 100%;}
+.container {max-width: 1920px;margin: 0 auto;}
+.form {width: 520px;border:3px solid #801D1C;background-color: rgba(67, 13, 13, .7);border-radius: 70px;padding: 1.5rem 2rem;position: relative;animation: scrollY 2s ease;}
+
+@keyframes scrollY {
+	0% {transform: translateY(-10%);opacity: .5;}
+	100% {transform: translateY(0);opacity: 1;}
+}
+
+.form::after, .form::before {content: "";width: 40px;height: 419px;position: absolute;}
+
+.form::after {background: url("../images/shine-right.png") no-repeat;right: -40px;top: 50px;}
+.form::before {background: url("../images/shine-left.png") no-repeat;left: -40px;bottom: 35px;}
+.circle {width:168px;height: 168px;background-color: rgba(129, 5, 5, .7);justify-content: center;color:#fff;
+border: 1px solid #7F0505;margin: 0 auto 2rem auto;}
+.circle, .circle .circle__sm {border-radius: 50%;}
+.circle .circle__sm {justify-content: center;flex-flow: column nowrap;width:154px;height: 154px;font-family: 'gilroy-extrabolduploaded_file';
+background: linear-gradient(227deg, #9d1d1d, #661312);border: 1px solid #b91515;}
+.circle .circle__sm span:first-child {font-size: 1.84rem;}
+.circle .circle__sm span:last-child {font-size: 1.56rem;}
+.form-group {margin-bottom: 20px;position: relative;}
+.form-group .icon {position: absolute;left:20px;bottom: 0;top: 0;margin: auto}
+.form-group .icon + input {padding-left: 60px;}
+.form-group__input {width: 100%;height: 65px;background-color: #9B1E21;border: 0;outline: 0;color:#fff;font-size: 1rem;transition: border .5s ease;border:1px solid transparent}
+.form-group__input:focus {border-color: #fff;}
+.titles {color:#fff;margin-left: 2rem;animation: scrollY 3s ease;}
+.titles h3 {font-size: 2rem;margin-bottom: 10px;font-family: 'gilroy-extrabolduploaded_file';}
+.titles h2 {font-size: 3rem;font-family: 'gilroy-blackuploaded_file';}
+footer {background: #9B1E21;padding: 0 2rem;}
+footer, footer a {color:#fff;font-size: 1rem;}
+footer .links a {display: block;text-decoration: none;margin-right: 2rem;}
+footer .lists {justify-content: space-between;height: 80px;}
+.social {justify-content: flex-end;}
+.social .icon {width:50px;height: 50px;border-radius: 50%;justify-content: center;text-indent: -9999px;border:1px solid #FFFFFF;margin-left: .5rem;}
+footer .links a:hover, .form .btn:hover, .forgotPassword:hover, .rememberMe:hover {opacity: .88;}
+.social .icon:hover {transform: translateY(-2px);opacity: .88;}
+.social .icon::after {content: "";}
+.icon.face::after {background: url("../images/icon-face.png") no-repeat;width: 19px;height: 36px;}
+.icon.whatsapp::after {background: url("../images/icon-whatsapp.png") no-repeat;width: 30px;height: 30px;}
+.icon.twitter::after {background: url("../images/icon-twitter.png") no-repeat;width: 31px;height: 25px;}
+.icon.instagram::after {background: url("../images/icon-instagram.png") no-repeat;width: 26px;height: 26px;}
+.icon.user {width: 20px;height: 26px;background: url("../images/icon-user.png") no-repeat;}
+.icon.password {width: 23px;height: 28px;background: url("../images/icon-password.png") no-repeat;}
+.form .btn {width: 100%;height: 65px;background: linear-gradient(90deg, #120000, #380000);text-align: center;border:0;outline: 0;color:#fff;font-size: 1.1rem;
+border-radius: 30px;margin: 1rem 0;}
+.forgotPassword, .forgotPassword a, .rememberMe {color:#C6C5C4;text-decoration: none;font-size: .7rem;}
+.input-property {justify-content: space-between;}
+input[type="checkbox"] + label, input[type="radio"] + label, .form .btn {cursor: pointer;}
+footer .links, footer .lists, .social, .social .icon, .input-property, .circle .circle__sm, .circle, .wrapper, .center-area, main {display: flex;align-items: center;flex-wrap: wrap;}
+.logo {position: absolute;right: 2rem;top:1.2rem}
+.wrapper {flex-flow: column nowrap;align-items: stretch;min-height: 100vh}
+main .center-area {justify-content: center;margin-top: 20vh;margin-left: 21vw;margin-bottom: 2rem;}
+main {flex:1}
+.icon.face {align-items: flex-end;}
+.social .icon {transition: all .3s ease;}
+footer .links a, .form .btn, .forgotPassword, .rememberMe {transition: opacity .3s ease;}
+
+
+/*responsive*/
+@media(max-width:1400px) {
+
+html {font-size: 15px;}
+
+}
+
+@media(max-width:1200px) {
+html {font-size: 13px;}
+main .center-area {margin-left: 0;flex-direction: column;margin-top: 0;margin-bottom: 15px;}
+.titles {order:-1;margin:0 0 15px 0;text-align: center;}
+.titles br {display: none;}
+.logo {position: static;text-align: center;display: block;margin:15px 0}
+.logo img {height: 130px;}
+.circle .circle__sm {width: 104px;height: 104px;}
+.circle {width: 118px;height: 118px;}
+footer .lists {flex-direction: column;height: auto;padding: 20px 0;}
+.social .icon::after {background-size: 70% !important;background-position: center center !important;}
+.social .icon {width: 40px;height: 40px;margin: 20px 5px 0 5px;}
+
+}
+
+@media(max-width:768px) {
+
+.form {width: 100%;}
+footer .links {justify-content: center;}
+footer .links a {margin:1rem}
+main, footer {padding: 0 15px;}
+.form::after, .form::before {display: none !important;}
+
+}
+
+/*responsive*/
